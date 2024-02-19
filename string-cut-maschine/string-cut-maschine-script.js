@@ -1,64 +1,53 @@
-console.log("ich schneide strings wie es mir gefällt!");
+console.log("ich schneide mir die strings, wie es mir gefällt!");
 
-const alphabet = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
+let testString = "hjkdashblnpofnsmxqpsbaaddjfeoaejn";
 
-let testSting = "hjkdashblnpofnsmxqpsbaaddjfeoaejn";
+testString = "hjkdash";
 
 let array = [];
 
 let cuttedString = [];
 
+let cuttedStringCount = 0;
+
 let count = 0;
 
-for (let x = 0; x < testSting.length; x++) {
-  letter = testSting[x];
+for (i = 0; i < testString.length; i++) {
+  ///// erstellt array mit jeden buchstaben einzeln
+  array[i] = testString.charAt(i);
+}
 
-  for (let i = 0; i < testSting.length; i++) {
-    console.log("i=", testSting.charAt(i), "letter=", letter);
+console.log(array);
 
-    if (testSting.charAt(i) === letter) {
+for (let x = 0; x < testString.length; x++) {
+  // startet mit dem ersten buchstaben
+  letter = testString[x];
+
+  for (let i = 0; i < testString.length; i++) {
+    console.log("i=", testString.charAt(i), "letter=", letter);
+
+    if (testString.charAt(i) === letter) {
       count += 1;
+
       if (count === 2) {
         console.log(
           "ERWISCHT!!!!!!!!!!!!!!!!!!",
           "gefundener Buchstabe:",
-          testSting.charAt(i),
+          testString.charAt(i),
           letter,
           "count:",
           count
         );
-        count = 0;
-      }
 
-      cuttedString = testSting.slice(i, 1);
-      console.log("cuttedString:", cuttedString);
+        count = 0;
+
+        cuttedString[cuttedStringCount] = array.splice(x, x + 1);
+        console.log("cuttedString:", cuttedString);
+        console.log("testString:", testString);
+        cuttedStringCount += 1;
+        testString = array.join("");
+        console.log("gekürzter String:", testString);
+      }
     }
   }
 }
