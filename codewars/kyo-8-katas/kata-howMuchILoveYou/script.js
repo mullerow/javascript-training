@@ -18,21 +18,19 @@ Your goal in this kata is to determine which phrase the girls would say at the l
 */
 
 function howMuchILoveYou(nbPetals) {
-  rest = (nbPetals - 6) / 6;
-  rounds = Math.ceil(rest);
-  reduced = nbPetals - rounds * 6;
+  rest = nbPetals % 6;
 
-  if (nbPetals === 1 || reduced / 1 === 1) {
+  if (rest === 1) {
     return "I love you";
-  } else if (nbPetals === 2 || reduced / 2 === 1) {
+  } else if (rest === 2) {
     return "a little";
-  } else if (nbPetals === 3 || reduced / 3 === 1) {
+  } else if (rest === 3) {
     return "a lot";
-  } else if (nbPetals === 4 || reduced / 4 === 1) {
+  } else if (rest === 4) {
     return "passionately";
-  } else if (nbPetals === 5 || reduced / 5 === 1) {
+  } else if (rest === 5) {
     return "madly";
-  } else if (nbPetals === 6 || reduced / 6 === 1) {
+  } else {
     return "not at all";
   }
 }
