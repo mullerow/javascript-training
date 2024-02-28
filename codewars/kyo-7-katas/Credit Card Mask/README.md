@@ -3,7 +3,7 @@ Codewars Kata: https://www.codewars.com/kata/5412509bd436bd33920011bc/javascript
 Name: Credit Card Mask
 
 Solution:
-
+```js
 function maskify(cc) {
 cc = cc.split("");
 let result = "";
@@ -17,3 +17,4 @@ result += cc[i];
 }
 return result;
 }
+```
