@@ -3,7 +3,7 @@ CodeWars-kata: https://www.codewars.com/kata/54ff3102c1bad923760001f3
 Name: Vowel Count
 
 Solution:
-
+```js
 function getCount(str) {
 let n = 0;
 let dict = {
@@ -20,3 +20,4 @@ n++;
 }
 return n;
 }
+```
