@@ -1,7 +1,9 @@
-My Solution for: https://www.codewars.com/kata/5266876b8f4bf2da9b000362
+Codewars Kata: https://www.codewars.com/kata/5266876b8f4bf2da9b000362
 
-Kata-title: Who likes it?
+Name: Who likes it?
 
+Solution:
+```js
 function likes(names) {
 let amountNames = names.length;
 let message = ["no one"," and "," others"," like this"," likes this",", ",];
@@ -19,3 +21,4 @@ names[0] + message[5] + names[1] + message[1] + names[2] + message[3]
 return (names[0] + message[5] + names[1] + message[1] + (amountNames - 2) + message[2] + message[3]);
 }
 }
+```
