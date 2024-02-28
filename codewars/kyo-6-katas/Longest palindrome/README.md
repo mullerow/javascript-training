@@ -3,7 +3,7 @@ Codewars Kata: https://www.codewars.com/kata/5a0178f66f793bc5b0001728
 Name: longest palindrome
 
 Solution:
-
+```js
 function longestPalindrome(str) {
 let count = 0;
 str = str.toLowerCase();
@@ -23,3 +23,4 @@ count = 2 _ count + 1;
 } else count \*= 2;
 return count;
 }
+```
