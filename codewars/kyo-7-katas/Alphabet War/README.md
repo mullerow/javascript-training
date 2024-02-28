@@ -3,7 +3,7 @@ Codewars Kata: https://www.codewars.com/kata/59377c53e66267c8f6000027
 Name: Alphabet war
 
 Solution:
-
+```js
 function alphabetWar(fight) {
 const dict = {
 w: 4,
@@ -32,3 +32,4 @@ return "Left side wins!";
 return "Let's fight again!";
 }
 }
+```
