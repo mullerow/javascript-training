@@ -3,7 +3,7 @@ Codewars Kata: https://www.codewars.com/kata/62ad72443809a4006998218a
 Name: Likes Vs Dislikes
 
 Solution:
-
+```js
 function likeOrDislike(buttons) {
 let count = 0;
 for (let i = buttons.length - 1; i > 0; i--) {
@@ -23,3 +23,4 @@ console.log(buttons.length - 1);
 return buttons[buttons.length - 1];
 }
 }
+```
