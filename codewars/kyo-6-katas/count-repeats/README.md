@@ -4,6 +4,7 @@ Kata: Count Repeats
 
 Solution: (Not yet fully operational!)
 
+```js
 function countRepeats(stringy) {
 let array = [];
 let count = 0;
@@ -27,3 +28,4 @@ count += 1;
 console.log("count", count);
 return count;
 }
+```
