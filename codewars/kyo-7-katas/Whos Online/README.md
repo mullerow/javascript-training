@@ -3,7 +3,7 @@ Codewars Kaka: https://www.codewars.com/kata/5b6375f707a2664ada00002a
 Name: Who's Online?
 
 Solution:
-
+```js
 function whosOnline(friends) {
 let result = { online: [], offline: [], away: [] };
 for (i = 0; i < friends.length; i++) {
@@ -26,3 +26,4 @@ delete result.away;
 }
 return result;
 }
+```
